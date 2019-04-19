@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="police_planner.main_menu" name="Police"/>
+    </data>
+</odoo>

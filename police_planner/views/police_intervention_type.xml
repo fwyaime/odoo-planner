@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="police_planner.intervention_type_action">
+            <field name="name">Intervention types</field>
+            <field name="res_model">police.intervention.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain"></field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem id="police_planner.intervention_menuitem" name="Interventions" parent="police_planner.main_menu" action="police_planner.intervention_type_action"/>
+    </data>
+</odoo>

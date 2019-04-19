@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="police_planner.zone_action">
+            <field name="name">Police zones</field>
+            <field name="res_model">police.zone</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain"></field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem id="police_planner.zone_menuitem" name="Zones" parent="police_planner.main_menu" action="police_planner.zone_action"/>
+    </data>
+</odoo>
