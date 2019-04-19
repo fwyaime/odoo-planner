@@ -13,4 +13,5 @@ class PoliceInterventionType(models.Model):
     code = fields.Char()
     start_hour = fields.Float()
     end_hour = fields.Float()
+    number_of_policemen = fields.Integer()
     

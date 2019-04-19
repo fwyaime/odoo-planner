@@ -14,4 +14,4 @@ class PoliceHouse(models.Model):
     employee_ids = fields.One2many('hr.employee', 'police_house_id', string="Employees")
     period_plan_ids = fields.One2many('police.plan', 'house_id', string="Plans")
 
-    parent_house = fields.Many2one('police.house')
+    parent_house_id = fields.Many2one('police.house', string="Parent")

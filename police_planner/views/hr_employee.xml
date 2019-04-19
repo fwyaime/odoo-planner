@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="hr.view_employee_form"  />
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside">
-                    <page aame="police" string="Police">
+                    <page name="police" string="Police">
                         <field name="police_house_id" />
                         <field name="work_organization" />
                         <field name="free_week_day" />

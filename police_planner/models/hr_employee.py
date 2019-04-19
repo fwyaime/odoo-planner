@@ -14,7 +14,7 @@ class HrEmployee(models.Model):
     free_week_day = fields.Selection([('1', 'Monday'), ('2', 'Tuesday'), ('3', 'Wednesday'), ('4', 'Thursday'), ('5', 'Friday')])
     intervention_type_ids = fields.Many2many('police.intervention.type')
 
-    plan_line_ids = fields.Many2many('police.plan.line')
+    plan_line_ids = fields.Many2many('police.plan.day.line')
 
     period_start_consecutive_worked_days = fields.Integer()
     period_start_consecutive_worked_nights = fields.Integer()
@@ -28,4 +28,3 @@ class HrEmployee(models.Model):
     ok_wednesday_afternoon = fields.Boolean()
     ok_night = fields.Boolean()
     ok_early_morning = fields.Boolean()
-    
